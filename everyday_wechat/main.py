@@ -5,6 +5,7 @@
 核心代码。
 """
 import os
+import platform
 import time
 # from apscheduler.schedulers.blocking import BlockingScheduler
 from apscheduler.schedulers.background import BackgroundScheduler
