@@ -69,7 +69,7 @@ def is_online(auto_login=False):
     for _ in range(2):  # 尝试登录 2 次。
         if platform.system() == 'Linux' :
             # 命令行显示登录二维码。
-            itchat.auto_login(enableCmdQR=2, hotReload=hotReload, loginCallback=loginCallback,
+            itchat.auto_login(enableCmdQR=-1, hotReload=hotReload, loginCallback=loginCallback,
                               exitCallback=exitCallback)
             itchat.run(blockThread=True)
         else:
