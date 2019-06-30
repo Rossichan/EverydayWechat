@@ -20,7 +20,7 @@ def get_dictum_info(channel):
     """
     if not channel:
         return None
-    source = DICTUM_NAME_DICT.get(channel, '')
+    source = DICTUM_NAME_DICT.get(channel, 'lovelive')
     if source:
         addon = importlib.import_module('everyday_wechat.control.onewords.' + source, __package__)
         dictum = addon.get_one_words()
