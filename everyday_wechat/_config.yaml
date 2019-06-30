@@ -46,11 +46,11 @@ alarm_info:
   #True 开启定时提醒，False 关闭
   is_alarm: True
   #定时发送时间
-  alarm_timed: '6:00'
+  alarm_timed: '8:55'
 
 girlfriend_infos:
   - #女友微信昵称或者备注名，不能输入微信号。（如填：文件传输助手，发消息到文件传输助手，测试效果）
-    wechat_name: 'Rossi chanξ'
+    wechat_name: '文件传输助手'
     #女友所在城市，用于发送天气。（可空）
     city_name: '广州'
     # 格言渠道（1 : ONE●一个，2 : 词霸（每日英语，双语）3: 土味情话 4 : 一言，5：笑话，6 民国情书)(可空)
@@ -63,14 +63,5 @@ girlfriend_infos:
     # 生日："1980-06-15" or "06-15"
     birthday: "1997-10-25"
 
-#  如果你有多个好友需要发送，则参照这个样式，复制即可
-#  如不需要，则删除或注解下面所有的数据
-  - #group_name: 'EverydayWechat 交流群' # 群聊名称，必须要把需要的群聊保存到通讯录。
-    wechat_name: '段大羊毛྄ེ很想瘦'
-    city_name: '日照'
-    dictum_channel : 3
-    start_date: '2019-05-28'
-    sweet_words: '宝贝今天要开开心心哦！来自你的小林子。。。'
-    birthday: "1991-10-24"
 
 
