@@ -188,7 +188,7 @@ def send_alarm_msg():
         sweet_words = gf.get('sweet_words')
         horoscope = get_xzw_info(gf.get("birthday"))
 
-        send_msg = '\n'.join(x for x in [weather, dictum, diff_time, sweet_words, horoscope] if x)
+        send_msg = '\n'.join(x for x in [weather, horoscope, dictum, diff_time, sweet_words] if x)
         print(send_msg)
 
         if not send_msg or not is_online(): continue
