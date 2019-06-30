@@ -54,7 +54,7 @@ girlfriend_infos:
     #女友所在城市，用于发送天气。（可空）
     city_name: '广州'
     # 格言渠道（1 : ONE●一个，2 : 词霸（每日英语，双语）3: 土味情话 4 : 一言，5：笑话，6 民国情书)(可空)
-    dictum_channel : 3
+    dictum_channel : 1
     # 从那天开始勾搭的(最终效果为：宝贝这是我们在一起的第 111 天)（可空）
     start_date: '2017-05-25'
     # 落款（可空）
@@ -68,7 +68,7 @@ girlfriend_infos:
   - #group_name: 'EverydayWechat 交流群' # 群聊名称，必须要把需要的群聊保存到通讯录。
     wechat_name: '段大羊毛྄ེ很想瘦'
     city_name: '日照'
-    dictum_channel : 3
+    dictum_channel : 1
     start_date: '2019-05-28'
     sweet_words: '宝贝今天要开开心心哦！来自你的小林子。。。'
     birthday: "1991-10-24"
