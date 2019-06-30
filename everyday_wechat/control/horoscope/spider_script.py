@@ -57,7 +57,7 @@ def get_xzw_data_list(constellation_name):
     ret = []
     print("获取星座屋数据 ...")
     # /为今日运势，/1为明日运势  constellation_name为星座中文名
-    req_url = XZW_BASE_URL + constellation_dict[constellation_name] + "/”
+    req_url = XZW_BASE_URL + constellation_dict[constellation_name] + "/"
     resp = requests.get(req_url, headers=SPIDER_HEADERS)
     if resp.status_code == 200:
         resp.encoding = 'utf-8'
