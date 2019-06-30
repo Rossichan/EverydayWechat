@@ -33,7 +33,7 @@ def get_today_weather(cityname):
                 return_text = ' '.join(
                     x for x in [reportTime,address, data_dict['weather'], data_dict['temp'],
                                 data_dict['windDirection'] + '风', data_dict['windPower'],
-                                '湿度：' + data_dict['humidity']] if x)
+                                '湿度：' + data_dict['humidity'], ' ' + '愿你拥有比阳光明媚的心情'] if x)
                 # print(return_text)
                 return return_text
             else:
