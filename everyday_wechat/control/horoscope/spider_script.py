@@ -74,16 +74,16 @@ def get_xzw_data_list(constellation_name):
                 "name": detail.strong.text,
                 "info": detail.span.text
             })
-            name = constellation_name + "今日运势"
-            print("获取今日星座运势成功！")
-            temp_dict = {
-                "title_name": name,
-                "date": date_time,
-                "lucky_colour": lucky_colour,
-                "lucky_num": lucky_num,
-                "detail_info": detail_list
-            }
-            ret.append(temp_dict)
+        name = constellation_name + "今日运势"
+        print("获取今日星座运势成功！")
+        temp_dict = {
+            "title_name": name,
+            "date": date_time,
+            "lucky_colour": lucky_colour,
+            "lucky_num": lucky_num,
+            "detail_info": detail_list
+        }
+        ret.append(temp_dict)
     return ret
 
 
