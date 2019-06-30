@@ -20,7 +20,7 @@ def get_dictum_info(channel):
     """
     if not channel:
         return None
-    source = DICTUM_NAME_DICT.get(channel, 'lovelive')
+    source = DICTUM_NAME_DICT.get(channel)
     if source:
         addon = importlib.import_module('everyday_wechat.control.onewords.' + source, __package__)
         dictum = addon.get_one_words()
@@ -48,8 +48,8 @@ def get_bot_info(message, userId=''):
     :param message:str, 发送的话
     :return:str, 回复的话
     """
-    channel = get_yaml().get('bot_channel', 2)
-    source = BOT_NAME_DICT.get(channel, 'yigeai')
+    channel = get_yaml().get('bot_channel')
+    source = BOT_NAME_DICT.get(channel)
     if source:
         addon = importlib.import_module('everyday_wechat.control.bot.' + source, __package__)
         reply_msg = addon.get_auto_reply(message, userId)
