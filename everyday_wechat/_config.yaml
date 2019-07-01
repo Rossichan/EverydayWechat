@@ -72,5 +72,13 @@ girlfriend_infos:
     start_date: '2019-05-28'
     sweet_words: '宝贝今天要开开心心哦！来自你的小林子。。。'
     birthday: "1991-10-24"
+    
+  - #group_name: 'EverydayWechat 交流群' # 群聊名称，必须要把需要的群聊保存到通讯录。
+    wechat_name: 'slash'
+    city_name: '烟台'
+    dictum_channel : 1
+    start_date: '2019-05-28'
+    sweet_words: '宝贝今天要开开心心哦！来自你的小林子。。。'
+    birthday: "1992-06-14"
 
 
