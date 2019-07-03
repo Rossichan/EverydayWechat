@@ -52,7 +52,7 @@ girlfriend_infos:
   - #女友微信昵称或者备注名，不能输入微信号。（如填：文件传输助手，发消息到文件传输助手，测试效果）
     wechat_name: 'Rossi chanξ'
     #女友所在城市，用于发送天气。（可空）
-    city_name: '广州'
+    city_name: 'guangzhou'
     # 格言渠道（1 : ONE●一个，2 : 词霸（每日英语，双语）3: 土味情话 4 : 一言，5：笑话，6 民国情书)(可空)
     dictum_channel : 1
     # 从那天开始勾搭的(最终效果为：宝贝这是我们在一起的第 111 天)（可空）
@@ -67,7 +67,7 @@ girlfriend_infos:
 #  如不需要，则删除或注解下面所有的数据
   - #group_name: 'EverydayWechat 交流群' # 群聊名称，必须要把需要的群聊保存到通讯录。
     wechat_name: '段大羊毛྄ེ很想瘦'
-    city_name: '日照'
+    city_name: 'rizhao'
     dictum_channel : 1
     start_date: '2019-05-28'
     sweet_words: '宝贝今天要开开心心哦！来自你的小林子。。。'
@@ -75,7 +75,7 @@ girlfriend_infos:
     
   - #group_name: 'EverydayWechat 交流群' # 群聊名称，必须要把需要的群聊保存到通讯录。
     wechat_name: 'slash'
-    city_name: '烟台'
+    city_name: 'yantai'
     dictum_channel : 1
     start_date: '2019-05-28'
     sweet_words: '宝贝今天要开开心心哦！来自你的小林子。。。'
