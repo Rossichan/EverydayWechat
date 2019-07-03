@@ -1,53 +1,32 @@
 # coding=utf-8
-"""
-https://github.com/MZCretin/RollToolsApi#获取特定城市今日天气
-获取特定城市今日天气
-"""
 import requests
+from bs4 import BeautifulSoup
+from everyday_wechat.utils.common import SPIDER_HEADERS
 
 def get_today_weather(cityname):
     """
-    获取特定城市今日天气
-     https://github.com/MZCretin/RollToolsApi#获取特定城市今日天气
-    :param cityname: 传入你需要查询的城市，请尽量传入完整值，否则系统会自行匹配，可能会有误差
-    :return:天气(2019-06-12 星期三 晴 南风 3-4级 高温 22.0℃ 低温 18.0℃ 愿你拥有比阳光明媚的心情)
+    https://weather.mipang.com/rizhao获取特定城市今天天气
     """
-    print('获取 {} 的天气...'.format(cityname))
+    print('获取 米胖天气 信息...')
+    weather_url = 'https://weather.mipang.com/{}'.format(cityname)
     try:
-        #调用API接口
-        resp = requests.get('https://www.mxnzp.com/api/weather/current/{}'.format(cityname))
-        # print(resp.text)
-        '''
-        # {"code":1,"msg":"数据返回成功","data":{"address":"广西壮族自治区 桂林市 全州县",
-        # "cityCode":"450324","temp":"26℃","weather":"晴","windDirection":"东北","windPower":"≤3级",
-        # "humidity":"58%","reportTime":"2019-06-14 10:49:37"}}
-        '''
+        resp = requests.get(weather_url, headers=SPIDER_HEADERS)
         if resp.status_code == 200:
-            if resp.json()['code'] == 1:
-                data_dict = resp.json()['data']
-                address = data_dict['address'].strip()
-                if ' ' in address:
-                    address = address.split(' ')[-1]
-                reportTime = data_dict['reportTime'].strip()
-                reportTime = reportTime.split(' ')[0]
-                return_text = ' '.join(
-                    x for x in [reportTime,address, data_dict['weather'], data_dict['temp'],
-                                data_dict['windDirection'] + '风', data_dict['windPower'],
-                                '湿度：' + data_dict['humidity'],  '愿你拥有比阳光明媚的心情'] if x)
-                # print(return_text)
-                return return_text
-            else:
-                print('获取天气失败:{}'.format( resp.json()['msg']))
-                # return None
-        print('获取天气失败。')
+            soup_texts = BeautifulSoup(resp.text, 'lxml')
+            #取天气预报
+            predict_msg = soup_texts.find('div', class_='row row1').text #只取当天的这句
+            #取生活指数
+            sweet_msg = soup_texts.find('div', class_='box box3').text.replace('\n', ':')
+            return predict_msg + '\n' + sweet_msg
+        print('获取 米胖天气 失败。')
     except Exception as exception:
         print(exception)
-        # return None
-    # return None
-
+        return None
+    return None
 
 
 if __name__ == '__main__':
-    cityname = '香港'
-    get_today_weather(cityname)
+    cityname = 'guangzhou'
+    print(get_today_weather(cityname))
+
 
