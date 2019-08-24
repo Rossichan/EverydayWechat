@@ -46,13 +46,13 @@ alarm_info:
   #True 开启定时提醒，False 关闭
   is_alarm: True
   #定时发送时间
-  alarm_timed: '6:00'
+  alarm_timed: '18:00'
 
 girlfriend_infos:
   - #女友微信昵称或者备注名，不能输入微信号。（如填：文件传输助手，发消息到文件传输助手，测试效果）
     wechat_name: 'Rossi chanξ'
     #女友所在城市，用于发送天气。（可空）
-    city_name: 'guangzhou'
+    city_name: 'tianqi-55252'
     # 格言渠道（1 : ONE●一个，2 : 词霸（每日英语，双语）3: 土味情话 4 : 一言，5：笑话，6 民国情书)(可空)
     dictum_channel : 1
     # 从那天开始勾搭的(最终效果为：宝贝这是我们在一起的第 111 天)（可空）
