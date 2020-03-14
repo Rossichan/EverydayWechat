@@ -26,9 +26,8 @@ yigeai_conf:
 # - '好友1'
 # - '好友2'
 auto_reply_names:
-  - 'At ease。'
   - '文件传输助手'
-  - 'kun.'
+
 
 #---------------------------群聊助手设置（已完成，正在整理。下个版本发布）--------------------------
 auto_reply_group_conf:
@@ -46,32 +45,32 @@ alarm_info:
   #True 开启定时提醒，False 关闭
   is_alarm: True
   #定时发送时间
-  alarm_timed: '18:00'
+  alarm_timed: '6:00'
 
 girlfriend_infos:
   - #女友微信昵称或者备注名，不能输入微信号。（如填：文件传输助手，发消息到文件传输助手，测试效果）
-    wechat_name: 'Rossi chanξ'
+    wechat_name: '🎐'
     #女友所在城市，用于发送天气。（可空）
-    city_name: 'tianqi-55252'
+    city_name: 'weihai'
     # 格言渠道（1 : ONE●一个，2 : 词霸（每日英语，双语）3: 土味情话 4 : 一言，5：笑话，6 民国情书)(可空)
     dictum_channel : 1
     # 从那天开始勾搭的(最终效果为：宝贝这是我们在一起的第 111 天)（可空）
-    start_date: '2017-05-25'
+    start_date: '2020-02-28'
     # 落款（可空）
-    sweet_words: '小肥今天要开开心心哦！来自最爱你的小肥。。。'
+    sweet_words: '小笨笨今天要开开心心哦！--你的小可爱嘿嘿。。。'
     # 落款参考：['厌物', '你脚下的蚂蚁', '专说骗人的诳话者', '黄天霸', 'cxk', '魔鬼的叔父', '哺乳类脊椎动物之一', '名字写在水上的人', 'BIG BAD WOLF', '你的兄弟']
     # 生日："1980-06-15" or "06-15"
-    birthday: "1997-10-25"
+    birthday: "1992-11-03"
 
 #  如果你有多个好友需要发送，则参照这个样式，复制即可
 #  如不需要，则删除或注解下面所有的数据
-  - #group_name: 'EverydayWechat 交流群' # 群聊名称，必须要把需要的群聊保存到通讯录。
-    wechat_name: '段大羊毛྄ེ很想瘦'
-    city_name: 'rizhao'
-    dictum_channel : 1
-    start_date: '2019-05-28'
-    sweet_words: '宝贝今天要开开心心哦！来自你的小林子。。。'
-    birthday: "1991-10-24"
+#  - #group_name: 'EverydayWechat 交流群' # 群聊名称，必须要把需要的群聊保存到通讯录。
+#    wechat_name: '段大羊毛྄ེ很想瘦'
+#    city_name: 'rizhao'
+#    dictum_channel : 1
+#    start_date: '2019-05-28'
+#    sweet_words: '宝贝今天要开开心心哦！来自你的小林子。。。'
+#    birthday: "1991-10-24"
     
   - #group_name: 'EverydayWechat 交流群' # 群聊名称，必须要把需要的群聊保存到通讯录。
     wechat_name: 'slash'
