@@ -9,12 +9,13 @@ is_forced_switch: False
 is_auto_relay: True
 
 # 机器人渠道（1: 图灵机器人，2: 一个AI ,3 : 青云客)
-bot_channel: 2
+bot_channel: 1
 
 #图灵机器人(http://www.tuling123.com/)免费用户每天可用 100 条。
 #请在官网注册并申请 apikey ,userID。
 turing_conf:
-  apiKey: '2ee6e84a755b4ac2b5b2cc25d992b03a'
+  apiKey: '81534961b5224112821e11bcb35fee9e'
+  userID: '581294'
 
 
 # 一个 Al (http://www.yige.ai/),这个功能挺多的，朋友们自行申请，训练。
@@ -27,6 +28,7 @@ yigeai_conf:
 # - '好友2'
 auto_reply_names:
   - '文件传输助手'
+  - 'slash'
 
 
 #---------------------------群聊助手设置（已完成，正在整理。下个版本发布）--------------------------
@@ -49,7 +51,7 @@ alarm_info:
 
 girlfriend_infos:
   - #女友微信昵称或者备注名，不能输入微信号。（如填：文件传输助手，发消息到文件传输助手，测试效果）
-    wechat_name: '🎐'
+    wechat_name: '遥🎐'
     #女友所在城市，用于发送天气。（可空）
     city_name: 'weihai'
     # 格言渠道（1 : ONE●一个，2 : 词霸（每日英语，双语）3: 土味情话 4 : 一言，5：笑话，6 民国情书)(可空)
